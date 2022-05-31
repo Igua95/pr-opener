@@ -8,128 +8,13 @@ const info = (log) => console.log(chalk.blue(log));
 const success = (log) => console.log(chalk.green(log));
 const fail = (log) => console.log(chalk.red(log));
 
-const cwd = "/Users/figuacel/Development/repositories/mule/script";
+const cwd = "SET_HERE_WHERE_TO_STORE_THE_REPOS";
 const repos = [
   {
-    ticket: "W-10730861",
+    ticket: "W-1234567",
     namespace: "mulesoft",
-    name: "api-console-components",
+    name: "yourRepoName",
   },
-  {
-    ticket: "W-10730883",
-    namespace: "mulesoft",
-    name: "exchange-auth-components",
-  },
-  { ticket: "W-10730867", namespace: "mulesoft", name: "api-notebook-react" },
-  {
-    ticket: "W-10730889",
-    namespace: "mulesoft",
-    name: "exchange-automation-cleanup-scripts",
-  },
-  {
-    ticket: "W-10730918",
-    namespace: "mulesoft",
-    name: "exchange-automation-reporters",
-  },
-  {
-    ticket: "W-10730921",
-    namespace: "mulesoft",
-    name: "client-applications-ui",
-  },
-  {
-    ticket: "W-10730924",
-    namespace: "mulesoft",
-    name: "exchange-content-provider",
-  },
-  {
-    ticket: "W-10730926",
-    namespace: "mulesoft",
-    name: "exchange-crowd-migration-service",
-  },
-  {
-    ticket: "W-10730928",
-    namespace: "mulesoft",
-    name: "exchange-customization-client",
-  },
-  {
-    ticket: "W-10730929",
-    namespace: "mulesoft",
-    name: "design-center-projects-client",
-  },
-  {
-    ticket: "W-10730932",
-    namespace: "mulesoft",
-    name: "exchange-draft-to-markdown",
-  },
-  {
-    ticket: "W-10730939",
-    namespace: "mulesoft",
-    name: "exchange-file-storage-node-lib",
-  },
-  {
-    ticket: "W-10730942",
-    namespace: "mulesoft",
-    name: "exchange-file-upload-client",
-  },
-  {
-    ticket: "W-10730946",
-    namespace: "mulesoft",
-    name: "exchange-logging-node-lib",
-  },
-  {
-    ticket: "W-10730949",
-    namespace: "mulesoft",
-    name: "exchange-markdown-parser",
-  },
-  {
-    ticket: "W-10730952",
-    namespace: "mulesoft",
-    name: "exchange-markdown-to-draft",
-  },
-  {
-    ticket: "W-10730954",
-    namespace: "mulesoft",
-    name: "exchange-marketing-assets",
-  },
-  { ticket: "W-10730957", namespace: "mulesoft", name: "md-draft-js" },
-  {
-    ticket: "W-10730961",
-    namespace: "mulesoft",
-    name: "exchange-migration-tool",
-  },
-  {
-    ticket: "W-10730964",
-    namespace: "mulesoft",
-    name: "exchange-node-commons",
-  },
-  {
-    ticket: "W-10730970",
-    namespace: "mulesoft",
-    name: "exchange-node-db-commons",
-  },
-  { ticket: "W-10730973", namespace: "mulesoft", name: "exchange-node-errors" },
-  {
-    ticket: "W-10730976",
-    namespace: "mulesoft",
-    name: "exchange-node-messaging-client",
-  },
-  {
-    ticket: "W-10730982",
-    namespace: "mulesoft",
-    name: "exchange-object-store-proxy",
-  },
-  { ticket: "W-10730983", namespace: "mulesoft", name: "perspective" },
-  {
-    ticket: "W-10730988",
-    namespace: "mulesoft",
-    name: "exchange-pipeline-status",
-  },
-  {
-    ticket: "W-10730993",
-    namespace: "mulesoft",
-    name: "exchange-region-synchronizer-service",
-  },
-  { ticket: "W-10730996", namespace: "mulesoft", name: "exchange-rodo-bot" },
 ];
 
 async function cloneRepo(repo) {
